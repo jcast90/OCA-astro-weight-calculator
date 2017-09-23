@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="form-wrapper">
+        <h1 class="title is-3">Your Weight On The Planets</h1>
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input type="text" class="input" id="user-weight" placeholder="weight(lbs)" />
+            </p>
+        </div>
+        <div class="field">
+            <p class="control has-icons-left">
+                <span class="select">
+                  <select id="planets"></select>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <div class="control">
+                <label class="label">Remove Pluto As Planet?</label>
+                <label class="radio">
+                  <input type="radio" name="pluto">
+                  Yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="pluto">
+                  No
+                </label>
+            </div>
+        </div>
+
+
+        <div class="newPlanet">
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                  <input type="checkbox" id="showAdd">
+                 Add new planet and value
+                </label>
+                </div>
+            </div>
+
+            <div class="addFields hidden">
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control is-expanded has-icons-left">
+                                <input class="input" type="text" id="addPlanet" placeholder="New Planet">
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control is-expanded has-icons-left has-icons-right">
+                                <input class="input is-success" type="text" id="addValue" placeholder="New Value">
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control">
+                                <button id="add" class="button is-success">
+                                   Add New Planet
+                                  </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field">
+            <p class="control">
+                <button id="calculate-button" class="button is-success">
+                  Calculate Weight
+                </button>
+            </p>
+        </div>
+        <div class="field">
+            <div class="control">
+                <p class="input" id="output"></p>
+            </div>
+            <p class="help">This is where your weight will be output!</p>
+        </div>
+        <footer>
+            <img class="nasa-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/290px-NASA_logo.svg.png" alt="Nasa Logo" width="100px" height="100px" />
+        </footer>
+    </div>
+
+
+    <script src=" main.js " charset="utf-8 "></script>
+</body>
+
+</html>

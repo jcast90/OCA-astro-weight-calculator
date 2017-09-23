@@ -1,0 +1,48 @@
+html,
+body {
+    background-color: #5ECDB3;
+    height: 100vh;
+    margin: 0 !important;
+    color: #fff;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 1px solid #008A73;
+    box-shadow: 1px 1px 20px #008A73;
+    background-color: #2D3035;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.label {
+    color: #fff;
+}
+
+.checkbox:hover {
+    color: #5ECDB3;
+}
+
+.newPlanet {
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.is-3 {
+    text-align: center;
+    padding-top: 25px;
+    color: #5ECDB3;
+}
+
+footer {
+    text-align: center;
+}
